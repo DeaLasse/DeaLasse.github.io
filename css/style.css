@@ -51,6 +51,13 @@ body {
 	flex-direction: column;
 }
 
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .content {
 	width: 1180px;
 }
@@ -63,6 +70,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: #dedede;
+	padding: 0 10px;
 }
 
 footer {
@@ -74,6 +82,7 @@ footer {
 	align-items: center;
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
+	padding: 0 30px;
 }
 
 .tosi {
@@ -208,7 +217,7 @@ nav ul li a {
     content: "";
     position: absolute;
     width: 30px;
-    height: 4px;
+    height: 3.5px;
     background: #111111;
     transition: 0.3s;
 }
@@ -259,12 +268,12 @@ nav ul li a {
 
     nav ul {
         flex-direction: column;
-        gap: 15px;
+        gap: 25px;
     }
 
     nav ul li a {
         color: white;
-		font-size: 26px;
+		font-size: 30px;
     }
 
     .menu-btn {
@@ -282,11 +291,19 @@ nav ul li a {
 		height: 250px;
 		z-index: 20;
     }
+
+	.textBlock {
+		width: 580px;
+	}
 }
 
 @media (max-width: 768px) {
 	.content {
 		width: 688px;
+	}
+
+	.textBlock {
+		width: 512px;
 	}
 }
 
@@ -298,6 +315,7 @@ nav ul li a {
 	nav .city {
 		display: flex;
 		font-weight: 500;
+		margin-top: 35px;
 		font-size: 16px;
 	}
 
@@ -316,6 +334,22 @@ nav ul li a {
 
 	footer img {
 		width: 82px;
+	}
+
+	.textBlock {
+		width: 412px;
+	}
+
+	.title {
+		font-size: 300px;
+	}
+	
+	.title span {
+		font-size: 24px;
+	}
+
+	.bannerNews {
+		border-top-left-radius: 100px;
 	}
 }
 
@@ -340,6 +374,31 @@ nav ul li a {
 
 	.footerAlign {
 		gap: 30px;
+	}
+
+	.textBlock {
+		width: 318px;
+	}
+
+	.title {
+		font-size: 26px;
+	}
+	
+	.title span {
+		font-size: 20px;
+	}
+
+	.column div {
+		font-size: 14px;
+		gap: 10px;
+	}
+	
+	.textBlock h2 {
+		font-size: 18px;
+	}
+
+	.bannerNews {
+		border-radius: 0;
 	}
 }
 
@@ -432,19 +491,20 @@ nav ul li a {
 
 .bannerCard {
 	background-image: url('../img/Background.png');
-	width: 100vw;
+	width: 120vw;
 	height: 830px;
 	display: flex;
 	justify-content: center;
 	padding-top: 150px;
-	background-position: center;
+	background-position: 0 -170px;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .logoMain {
 	width: 220px;
 	position: absolute;
-	top: 70%;
+	top: 650px;
 	z-index: 2;
 }
 
@@ -455,6 +515,7 @@ nav ul li a {
 	flex-direction: column;
 	gap: 100px;
 	padding-bottom: 50px;
+	width: 1180px;
 }
 
 .title {
@@ -472,7 +533,6 @@ nav ul li a {
 }
 
 .textBlock {
-	width: 780px;
 	display: flex;
 	gap: 50px;
 	flex-direction: column;
@@ -482,7 +542,6 @@ nav ul li a {
 .column {
 	width: 100%;
 	display: flex;
-	justify-content: flex-start;
 }
 
 .alignRight {
@@ -535,6 +594,7 @@ nav ul li a {
 	font-family: montserrat;
 	font-size: 24px;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 .btn img {
@@ -618,8 +678,10 @@ nav ul li a {
 
 .bannerNews {
 	background-image: url('../img/Last\ News.jpg');
-	width: 100vw;
+	background-repeat: no-repeat;
+	background-position: center;
 	height: 768px;
+	width: 100vw;
 	border-top-left-radius: 200px;
 	display: flex;
 	justify-content: center;
