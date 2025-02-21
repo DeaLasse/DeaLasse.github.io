@@ -43,6 +43,7 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow-x: hidden;
 }
 
 body {
@@ -263,6 +264,7 @@ nav ul li a {
 
     nav ul li a {
         color: white;
+		font-size: 26px;
     }
 
     .menu-btn {
@@ -295,6 +297,8 @@ nav ul li a {
 
 	nav .city {
 		display: flex;
+		font-weight: 500;
+		font-size: 16px;
 	}
 
 	.tb2 {
@@ -352,7 +356,7 @@ nav ul li a {
 }
 
 .overlay.active {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     visibility: visible;
 	z-index: 10;
 }
