@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Compotes Citro';
+    src: url('Compotes-Citro.eot');
+    src: local('Compotes Citro'), local('Compotes-Citro'),
+        url('Compotes-Citro.eot?#iefix') format('embedded-opentype'),
+        url('Compotes-Citro.woff2') format('woff2'),
+        url('Compotes-Citro.woff') format('woff'),
+        url('Compotes-Citro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Compotes Citro';
+    src: url('Compotes-CitroBold.eot');
+    src: local('Compotes Citro Bold'), local('Compotes-CitroBold'),
+        url('Compotes-CitroBold.eot?#iefix') format('embedded-opentype'),
+        url('Compotes-CitroBold.woff2') format('woff2'),
+        url('Compotes-CitroBold.woff') format('woff'),
+        url('Compotes-CitroBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BodoniC';
+    src: url('../fonts/bodoniCyrillic/BodoniC-Italic.woff2') format('woff2'),
+        url('../fonts/bodoniCyrillic/BodoniC-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BodoniC';
+    src: url('../fonts/bodoniCyrillic/BodoniC-Bold.woff2') format('woff2'),
+        url('../fonts/bodoniCyrillic/BodoniC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BodoniC';
+    src: url('../fonts/bodoniCyrillic/BodoniC-BoldItalic.woff2') format('woff2'),
+        url('../fonts/bodoniCyrillic/BodoniC-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BodoniC';
+    src: url('../fonts/bodoniCyrillic/BodoniC.woff2') format('woff2'),
+        url('../fonts/bodoniCyrillic/BodoniC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BodoniPosterC';
+    src: url('../fonts/bodoniCyrillic/BodoniPosterC.woff2') format('woff2'),
+        url('../fonts/bodoniCyrillic/BodoniPosterC.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BodoniCondC';
+    src: url('../fonts/bodoniCyrillic/BodoniCondC.woff2') format('woff2'),
+        url('../fonts/bodoniCyrillic/BodoniCondC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/bodoniMT/BodoniMT-Italic.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMT-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT Condensed';
+    src: url('../fonts/bodoniMT/BodoniMTCondensed-Italic.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMTCondensed-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/bodoniMT/BodoniMTBlack.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMTBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/bodoniMT/BodoniMTBlack-Italic.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMTBlack-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT Condensed';
+    src: url('../fonts/bodoniMT/BodoniMTCondensed-BoldItalic.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMTCondensed-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/bodoniMT/BodoniMT-BoldItalic.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMT-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/bodoniMT/BodoniMT.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT Condensed';
+    src: url('../fonts/bodoniMT/BodoniMTCondensed.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMTCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT Condensed';
+    src: url('../fonts/bodoniMT/BodoniMTCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMTCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT';
+    src: url('../fonts/bodoniMT/BodoniMT-Bold.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni MT Poster Compressed';
+    src: url('../fonts/bodoniMT/BodoniMTPosterCompressed.woff2') format('woff2'),
+        url('../fonts/bodoniMT/BodoniMTPosterCompressed.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
