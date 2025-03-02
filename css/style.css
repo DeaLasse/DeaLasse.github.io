@@ -394,6 +394,10 @@ nav ul li a {
 	font-weight: bold;
 }
 
+.title h1 {
+	line-height: 100%;
+}
+
 .textBlock {
 	display: flex;
 	gap: 50px;
@@ -715,6 +719,10 @@ nav ul li a {
 	.mainBlock {
 		gap: 70px;
 	}
+
+	.bannerCard {
+		margin-bottom: 110px;
+	}
 }
 
 @media (min-width: 481px) {
@@ -764,6 +772,7 @@ nav ul li a {
 
 	.bannerNews {
 		border-radius: 0;
+		height: 40vh;
 	}
 
 	.address a {
