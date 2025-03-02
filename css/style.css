@@ -61,6 +61,8 @@ html, body {
 body {
 	background-color: #dedede;
 	flex-direction: column;
+	padding: 0 3vw;
+	position: relative;
 }
 
 main {
@@ -68,6 +70,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding-bottom: 100px;
 }
 
 .content {
@@ -95,6 +98,9 @@ footer {
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 	padding: 0 30px;
+	position: absolute;
+	bottom: 0;
+	background-color: #DEDEDE;
 }
 
 .tosi {
@@ -393,6 +399,7 @@ nav ul li a {
 	gap: 50px;
 	flex-direction: column;
 	align-items: center;
+	width: 70%;
 }
 
 .column {
@@ -674,10 +681,6 @@ nav ul li a {
 		font-size: 24px;
 	}
 
-	.bannerNews {
-		border-top-left-radius: 100px;
-	}
-
 	.column div {
 		width: 336px;
 	}
@@ -694,6 +697,7 @@ nav ul li a {
 
 	.bannerNews {
 		height: 50vh;
+		border-top-left-radius: 100px;
 	}
 
 	.bannerNews h1 {
@@ -707,6 +711,10 @@ nav ul li a {
 	.goodLuck {
 		font-size: 20px;
 	}
+
+	.mainBlock {
+		gap: 70px;
+	}
 }
 
 @media (min-width: 481px) {
@@ -719,7 +727,7 @@ nav ul li a {
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 390px) {
 	.content {
 		width: 318px;
 	}
