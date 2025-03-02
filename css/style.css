@@ -1,8 +1,9 @@
+/* Общие стили */
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-size: 1em;
 }
 
 img {
@@ -30,13 +31,24 @@ a:focus:after {
 	width: 100%;
 }
 
-p, a {
-	font-family: montserrat;
+a, p, h1, h2, h3 {
 	color: #111111;
 }
 
-h1, h2, h3 {
-	color: #111111;
+a, p, h4, h5 {
+	font-family: montserrat;
+}
+
+h1 {
+	font-family: 'BodoniPosterC';
+}
+
+h2 {
+	font-family: 'BodoniCondC';
+}
+
+h3 {
+	font-family: 'BodoniC';
 }
 
 html, body {
@@ -183,7 +195,13 @@ nav .city img {
 	text-wrap: nowrap;
 }
 
-/* ---- 2. Меню (по умолчанию в строку) ---- */
+.title h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+/* 2. Меню (по умолчанию в строку) */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -198,11 +216,8 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-/* nav ul li a:hover {
-    color: #ff9800;
-} */
+/* 3. Гамбургер (по умолчанию скрыт) */
 
-/* ---- 3. Гамбургер (по умолчанию скрыт) ---- */
 .menu-btn {
     display: none;
     width: 40px;
@@ -231,6 +246,7 @@ nav ul li a {
 }
 
 /* Анимация иконки (гамбургер → крестик) */
+
 .menu-btn.open span {
     background: transparent;
 }
@@ -245,164 +261,8 @@ nav ul li a {
 	background-color: white;
 }
 
-/* ---- 4. Мобильное меню (по умолчанию скрыто) ---- */
-@media (max-width: 1024px) {
-	.content {
-		width: 780px;
-	}
-	
-    nav {
-        position: fixed;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0.95);
-        width: 100%;
-        max-width: 300px;
-        padding: 20px;
-        background: none;
-        text-align: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
+/* 5. Затемнение фона */
 
-    nav ul {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    nav ul li a {
-        color: white;
-		font-size: 30px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    nav.open {
-        opacity: 1;
-        visibility: visible;
-        transform: translate(-50%, -50%) scale(1);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		height: 250px;
-		z-index: 20;
-    }
-
-	.textBlock {
-		width: 580px;
-	}
-}
-
-@media (max-width: 768px) {
-	.content {
-		width: 688px;
-	}
-
-	.textBlock {
-		width: 512px;
-	}
-}
-
-@media (max-width: 480px) {
-	.content {
-		width: 412px;
-	}
-
-	nav .city {
-		display: flex;
-		font-weight: 500;
-		margin-top: 35px;
-		font-size: 16px;
-	}
-
-	.tb2 {
-		display: block;
-		left: 50%;
-	}
-
-	.tb {
-		font-size: 32px;
-	}
-
-	.tosi h2 {
-		font-size: 14px;
-	}
-
-	footer img {
-		width: 82px;
-	}
-
-	.textBlock {
-		width: 412px;
-	}
-
-	.title {
-		font-size: 300px;
-	}
-	
-	.title span {
-		font-size: 24px;
-	}
-
-	.bannerNews {
-		border-top-left-radius: 100px;
-	}
-}
-
-@media (min-width: 481px) {
-	.left .city {
-		display: flex;
-	}
-
-	.tb1 {
-		display: block;
-	}
-}
-
-@media (max-width: 360px) {
-	.content {
-		width: 318px;
-	}
-
-	.tosi h2 {
-		font-size: 12px;
-	}
-
-	.footerAlign {
-		gap: 30px;
-	}
-
-	.textBlock {
-		width: 318px;
-	}
-
-	.title {
-		font-size: 26px;
-	}
-	
-	.title span {
-		font-size: 20px;
-	}
-
-	.column div {
-		font-size: 14px;
-		gap: 10px;
-	}
-	
-	.textBlock h2 {
-		font-size: 18px;
-	}
-
-	.bannerNews {
-		border-radius: 0;
-	}
-}
-
-/* ---- 5. Затемнение фона ---- */
 .overlay {
     position: fixed;
     top: 0;
@@ -490,21 +350,20 @@ nav ul li a {
 }
 
 .bannerCard {
-	background-image: url('../img/Background.png');
+	background: rgb(41,52,39);
+	background: linear-gradient(90deg, rgba(41,52,39,1) 0%, rgba(17,15,14,1) 100%);
 	width: 120vw;
-	height: 830px;
+	height: 600px;
 	display: flex;
 	justify-content: center;
-	padding-top: 150px;
-	background-position: 0 -170px;
-	background-size: cover;
-	background-repeat: no-repeat;
+	padding: 100px 0;
+	margin-bottom: 150px;
 }
 
 .logoMain {
 	width: 220px;
 	position: absolute;
-	top: 650px;
+	top: 570px;
 	z-index: 2;
 }
 
@@ -519,9 +378,6 @@ nav ul li a {
 }
 
 .title {
-	text-align: center;
-	font-family: 'BodoniPosterC';
-	font-size: 50px;
 	width: 100%;
 }
 
@@ -632,15 +488,18 @@ nav ul li a {
 .time {
 	display: flex;
 	font-family: montserrat;
-	font-size: 16px;
 	gap: 20px;
 }
 
-.time h2 {
+.time h4 {
 	font-size: 30px;
 }
 
-.time h2, h3 {
+.time h5 {
+	font-size: 16px;
+}
+
+.time h4, .time h5 {
 	font-weight: 500;
 }
 
@@ -680,12 +539,12 @@ nav ul li a {
 	background-image: url('../img/Last\ News.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 768px;
 	width: 100vw;
 	border-top-left-radius: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 60vh;
 }
 
 .block {
@@ -709,4 +568,214 @@ nav ul li a {
 	font-style: italic;
 	color: white;
 	text-align: end;
+}
+
+/* Медиа-запросы */
+
+@media (max-width: 1024px) {
+	.content {
+		width: 780px;
+	}
+	
+    nav {
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.95);
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        background: none;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        color: white;
+		font-size: 30px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 250px;
+		z-index: 20;
+    }
+
+	.textBlock {
+		width: 580px;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		width: 688px;
+	}
+
+	.textBlock {
+		width: 512px;
+	}
+}
+
+@media (max-width: 480px) {
+	.content {
+		width: 412px;
+	}
+
+	nav .city {
+		display: flex;
+		font-weight: 500;
+		margin-top: 35px;
+		font-size: 16px;
+	}
+
+	.tb2 {
+		display: block;
+		left: 50%;
+	}
+
+	.tb {
+		font-size: 32px;
+	}
+
+	.tosi h2 {
+		font-size: 14px;
+	}
+
+	footer img {
+		width: 82px;
+	}
+
+	.textBlock {
+		width: 412px;
+	}
+
+	.title h1 {
+		font-size: 32px;
+	}
+	
+	.title span {
+		font-size: 24px;
+	}
+
+	.bannerNews {
+		border-top-left-radius: 100px;
+	}
+
+	.column div {
+		width: 336px;
+	}
+
+	.hours {
+		width: 100%;
+	}
+
+	.time {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.bannerNews {
+		height: 50vh;
+	}
+
+	.bannerNews h1 {
+		font-size: 56px;
+	}
+	
+	.bannerNews p {
+		font-size: 22px;
+	}
+
+	.goodLuck {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 481px) {
+	.left .city {
+		display: flex;
+	}
+
+	.tb1 {
+		display: block;
+	}
+}
+
+@media (max-width: 360px) {
+	.content {
+		width: 318px;
+	}
+
+	.tosi h2 {
+		font-size: 12px;
+	}
+
+	.footerAlign {
+		gap: 30px;
+	}
+
+	.textBlock {
+		width: 318px;
+	}
+
+	.title h1 {
+		font-size: 26px;
+	}
+	
+	.title span {
+		font-size: 20px;
+	}
+
+	.column div {
+		font-size: 14px;
+		gap: 10px;
+		width: 236px;
+	}
+	
+	.textBlock h2 {
+		font-size: 18px;
+	}
+
+	.bannerNews {
+		border-radius: 0;
+	}
+
+	.address a {
+		font-size: 16px;
+	}
+
+	.address img {
+		width: 22px;
+	}
+
+	.bannerNews h1 {
+		font-size: 38px;
+	}
+	
+	.bannerNews p {
+		font-size: 16px;
+	}
+
+	.goodLuck {
+		font-size: 16px;
+		text-align: center;
+	}
 }
