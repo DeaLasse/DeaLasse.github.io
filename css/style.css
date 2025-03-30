@@ -90,6 +90,7 @@ header {
 	padding: 0 10px;
 	position: fixed;
 	top: 0;
+	z-index: 2;
 }
 
 footer {
@@ -376,14 +377,14 @@ nav ul li a {
 	justify-content: center;
 	padding: 200px 0;
 	margin-bottom: 150px;
-	z-index: -5;
+	z-index: 0;
 }
 
 .logoMain {
 	width: 220px;
 	position: absolute;
 	top: 590px;
-	z-index: -2;
+	z-index: 1;
 }
 
 .mainBlock {
