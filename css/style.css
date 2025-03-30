@@ -73,6 +73,7 @@ main {
 	align-items: center;
 	flex-direction: column;
 	padding-bottom: 100px;
+	padding-top: 80px;
 }
 
 .content {
@@ -80,7 +81,7 @@ main {
 }
 
 header {
-	height: 92px;
+	height: 80px;
 	width: 100vw;
 	box-shadow: 0 0 20px 0 rgba(17, 17, 17, 0.1);
 	display: flex;
@@ -88,6 +89,8 @@ header {
 	align-items: center;
 	background-color: #dedede;
 	padding: 0 10px;
+	position: fixed;
+	top: 0;
 }
 
 footer {
@@ -103,6 +106,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	background-color: #DEDEDE;
+	z-index: -1;
 }
 
 .tosi {
@@ -239,18 +243,20 @@ nav ul li a {
 .menu-btn span::after {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 3.5px;
+    width: 26px;
+    height: 3px;
     background: #111111;
     transition: 0.3s;
 }
 
 .menu-btn span::before {
     transform: translateY(-10px);
+	top: 2px;
 }
 
 .menu-btn span::after {
     transform: translateY(10px);
+	top: -2px;
 }
 
 /* Анимация иконки (гамбургер → крестик) */
@@ -262,11 +268,13 @@ nav ul li a {
 .menu-btn.open span::before {
     transform: rotate(45deg);
 	background-color: white;
+	top: 0;
 }
 
 .menu-btn.open span::after {
     transform: rotate(-45deg);
 	background-color: white;
+	top: 0;
 }
 
 /* 5. Затемнение фона */
@@ -366,13 +374,14 @@ nav ul li a {
 	justify-content: center;
 	padding: 100px 0;
 	margin-bottom: 150px;
+	z-index: -5;
 }
 
 .logoMain {
 	width: 220px;
 	position: absolute;
 	top: 570px;
-	z-index: 2;
+	z-index: -2;
 }
 
 .mainBlock {
