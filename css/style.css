@@ -61,7 +61,6 @@ html, body {
 body {
 	background-color: #dedede;
 	flex-direction: column;
-	padding-top: env(safe-area-inset-top);
 	padding-left: 3vw;
 	padding-right: 3vw;
 	position: relative;
@@ -87,7 +86,9 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: #dedede;
-	padding: 0 10px;
+	padding-top: env(safe-area-inset-top);
+	padding-left: 10px;
+	padding-right: 10px;
 	position: fixed;
 	top: 0;
 }
