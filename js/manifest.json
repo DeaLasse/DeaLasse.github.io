@@ -1,0 +1,15 @@
+{
+	"name": "Tosi Bosi Coffee",
+	"short_name": "Tosi Bosi",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#dedede",
+	"theme_color": "#dedede",
+	"icons": [
+	  {
+		"src": "../img/apple-touch-icon.png",
+		"sizes": "180x180",
+		"type": "image/png"
+	  }
+	]
+  }
