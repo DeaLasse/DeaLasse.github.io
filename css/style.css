@@ -73,7 +73,6 @@ main {
 	align-items: center;
 	flex-direction: column;
 	padding-bottom: 100px;
-	padding-top: 80px;
 }
 
 .content {
@@ -369,10 +368,10 @@ nav ul li a {
 	background: rgb(41,52,39);
 	background: linear-gradient(90deg, rgba(41,52,39,1) 0%, rgba(17,15,14,1) 100%);
 	width: 120vw;
-	height: 600px;
+	height: 700px;
 	display: flex;
 	justify-content: center;
-	padding: 100px 0;
+	padding: 200px 0 100px 0;
 	margin-bottom: 150px;
 	z-index: -5;
 }
