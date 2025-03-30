@@ -3,7 +3,7 @@
 	"short_name": "Tosi Bosi",
 	"display": "standalone",
 	"background_color": "#dedede",
-	"theme_color": "#b0b0b0",
+	"theme_color": "#dedede",
 	"icons": [
 	  {
 		"src": "../img/apple-touch-icon.png",
