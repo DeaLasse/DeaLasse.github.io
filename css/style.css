@@ -21,9 +21,9 @@ a:after {
 	left: 0;
 	width: 0;
 	height: 2px;
-	background-color: #1111113f;
+	background-color: #bababa;
 	content: "";
-	transition: width 200ms ease-out;
+	transition: all 200ms ease-out;
 }
 
 a:hover:after,
@@ -61,6 +61,7 @@ html, body {
 body {
 	background-color: #dedede;
 	flex-direction: column;
+	padding-top: env(safe-area-inset-top);
 	padding-left: 3vw;
 	padding-right: 3vw;
 	position: relative;
@@ -86,9 +87,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: #dedede;
-	padding-top: env(safe-area-inset-top);
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px;
 	position: fixed;
 	top: 0;
 }
@@ -189,13 +188,16 @@ nav .city img {
 
 .logo img {
 	width: 50px;
-	transition: all 200ms ease-in;
+	transition: all 200ms ease-in-out;
 	cursor: pointer;
 	z-index: 1;
+	position: relative;
+	left: 0;
 }
 
 .logo img:hover {
-	width: 56px;
+	width: 55px;
+	left: -2px;
 }
 
 .tb1, .tb2 {
@@ -372,7 +374,7 @@ nav ul li a {
 	height: 700px;
 	display: flex;
 	justify-content: center;
-	padding: 200px 0 100px 0;
+	padding: 200px 0;
 	margin-bottom: 150px;
 	z-index: -5;
 }
@@ -380,7 +382,7 @@ nav ul li a {
 .logoMain {
 	width: 220px;
 	position: absolute;
-	top: 570px;
+	top: 590px;
 	z-index: -2;
 }
 
